@@ -13,8 +13,8 @@ const uint8_t PIN_UART_TX = 17;
 const uint8_t PIN_UART_RX = 16;
 const uint8_t PIN_DISPLAY_BRIGHTNESS = 5; // Used for ST7565, You can connect A pin to 5V for full brightness
 
-uint8_t DISPLAY_CONTRAST = 206;
-uint8_t DISPLAY_BRIGHTNESS = 255;
+const uint8_t DISPLAY_CONTRAST = 206;
+const uint8_t DISPLAY_BRIGHTNESS = 255;
 
 // SI = PIN_SPI_SDO_DATA_OUT_MISO
 // VDD = A = Anode = VCC
@@ -38,11 +38,11 @@ TaskHandle_t Task1;
 TaskHandle_t Task2;
 
 void setupDisplay() {
-    display.begin(DISPLAY_CONTRAST);
-//    display.st7565_command(CMD_SET_COM_REVERSE);
     pinMode(PIN_DISPLAY_BRIGHTNESS, OUTPUT);
 //    analogWrite(PIN_DISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS * 8421504);
     digitalWrite(PIN_DISPLAY_BRIGHTNESS, HIGH);
+    display.begin(DISPLAY_CONTRAST);
+//    display.st7565_command(CMD_SET_COM_REVERSE);
 //    display.st7565_command(CMD_SET_DISP_REVERSE);
 //    display.st7565_command(CMD_SET_DISP_START_LINE);
     display.st7565_command(CMD_SET_DISP_NORMAL);
