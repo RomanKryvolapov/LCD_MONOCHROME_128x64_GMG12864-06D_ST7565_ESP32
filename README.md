@@ -23,7 +23,7 @@
 <h3>in ST7565-i2c.cpp</h3>
 <h3>to 0</h3>
 
-![1!](https://github.com/RomanKryvolapov/1.3_OLED_128x64_SH1106_ESP32/blob/master/Display_OLED.jpg "1")
+![1!](https://github.com/RomanKryvolapov/LCD_MONOCHROME_128x64_GMG12864-06D_ST7565_ESP32/blob/master/Display.jpg "1")
 
-![2!](https://github.com/RomanKryvolapov/1.3_OLED_128x64_SH1106_ESP32/blob/master/ESP32-Pinout.png "2")
+![2!](https://github.com/RomanKryvolapov/LCD_MONOCHROME_128x64_GMG12864-06D_ST7565_ESP32/blob/master/ESP32-Pinout.png "2")
 
